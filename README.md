@@ -4,6 +4,8 @@ A browser-based SingBox config generator. Paste or fetch your proxy subscription
 
 ![screenshot](docs/images/screenshot.png)
 
+**Live demo:** https://jeffthebside.github.io/OkProxyConf/
+
 ---
 
 ## Features
