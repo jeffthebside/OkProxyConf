@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --font-family-sans: "Syne", system-ui, sans-serif;
+  --font-family-mono: "JetBrains Mono", "Fira Code", monospace;
+
+  --color-bg:        #0d0f14;
+  --color-bg-2:      #13161e;
+  --color-bg-3:      #1a1e28;
+  --color-border:    #252a38;
+  --color-border-2:  #2e3547;
+  --color-accent:    #4f9eff;
+  --color-accent-2:  #7c5cfc;
+  --color-accent-3:  #00e5a0;
+  --color-text:      #e2e8f0;
+  --color-text-2:    #8892a4;
+  --color-text-3:    #525c6e;
+
+  --animate-fade-in: fadeIn 0.15s ease-out;
+  --animate-slide-up: slideUp 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@layer base {
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-family-sans);
+  }
+
+  ::-webkit-scrollbar       { width: 4px; height: 4px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: var(--color-border-2); border-radius: 2px; }
+}
+
+/* JSON syntax highlight classes (applied via dangerouslySetInnerHTML) */
+.json-key  { color: #79b8ff; }
+.json-str  { color: #9ecbff; }
+.json-num  { color: #f97583; }
+.json-bool { color: #ffab70; }
+.json-null { color: var(--color-text-3); }
