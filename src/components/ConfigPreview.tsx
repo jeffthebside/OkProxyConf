@@ -99,7 +99,7 @@ export function ConfigPreview() {
         {/* Left: title + dns mode toggle */}
         <div className="flex items-center gap-3 min-w-0">
           <span className="text-[11px] font-bold uppercase tracking-widest text-text-2 flex-shrink-0">
-            📄 Config
+            📄 Sing-Box v1.12
           </span>
 
           {/* DNS mode toggle */}

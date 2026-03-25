@@ -1,10 +1,14 @@
 # OkProxyConf
 
+ [**中文文档**](README.zh-CN.md)
+
+
 A browser-based SingBox config generator. Paste or fetch your proxy subscription, configure routing groups and rule sets, and download a ready-to-use `config.json`.
 
 ![screenshot](docs/images/screenshot.png)
 
-**Live demo:** https://jeffthebside.github.io/OkProxyConf/
+**Try it out:** https://jeffthebside.github.io/OkProxyConf/
+
 
 ---
 
